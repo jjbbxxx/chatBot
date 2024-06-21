@@ -107,7 +107,7 @@ public class XunFeiBigModelMain {
     public static void handleUserInput(String content, CountDownLatch latch) throws MalformedURLException, URISyntaxException {
         initializeHistory();
         System.out.println("我:" + content);
-        websocketClient(getAuthUrl(), createReqParams(content+"请你在五句话以内回答。"), latch);
+        websocketClient(getAuthUrl(), createReqParams(content+"请你在三句话以内回答。"), latch);
     }
 
     /**

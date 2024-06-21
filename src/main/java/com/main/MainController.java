@@ -72,8 +72,7 @@ public class MainController {
 
                 // 获取讯飞大模型的回应
                 String xunFeiResponse = XunFeiBigModelMain.getLastResponse();
-                System.out.println("讯飞大模型回答: " + xunFeiResponse);
-
+                //System.out.println("讯飞大模型回答: " + xunFeiResponse);
                 // 将讯飞大模型的回答传给Reecho API
                 String reechoResponse = ReechoApi.sendRequestWithText(xunFeiResponse);
                 if (reechoResponse != null) {
